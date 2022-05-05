@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/thumbnail.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Fonts & Icons -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Simple Documentation </title>
+  </head>
+  <body>
+	<div class="walls">
+	
+			</div> <!-- Sidebar -->
+			<div class="col-md-8 right-side">
+			
+
+				<h2 id="server" class="title">Server Requirements</h2>
+				PHP version 5.6 or newer is recommended.
+
+				It should work on 5.3.7 as well, but we strongly advise you NOT to run such old versions of PHP, because of potential security and performance issues, as well as missing features.
+
+				MySQL (5.1+) mysqli and pdo drivers
+
+				<hr>
+
+				<h2 id="structure" class="title">Files & Folder Structure</h2>
+
+				<p>All files & folders are well organized. You can see below images to get an idea about files & folders. this web app is developed on the top of Codeigniter 3.1.9. So all controllers, models, helpers and other files are located in applicaiton folder. All view files are located inside view folder. Please visit Codeigniter official website for more about files and folders.</p>
+
+				<hr>
+
+				<p><img src="images/2018-03-27_004844.png" alt="files"></p>
+
+				<hr>
+
+				<h2 id="getstarted" class="title">Get Started</h2>
+				<hr>
+
+				<p><img src="images/2018-03-27_004844.png" alt="files"></p>
+
+				<hr>
+
+				<p>Now go to inside the extracted folder and browse application -> config folder</p> to configure database and others. Find <strong>config.php</strong>, </strong>Database.php.</strong> files and edit with your editor. Now change following options with your proper value. Please be extra careful to edit the <strong>config.php</strong> files. </p>
+				<hr>
+
+				<ul>
+					<h4>config.php</h4>
+					<hr>
+
+					<li>$config['base_url'] = 'http://yoursite.com/';</li>
+					<p>Please insert your site's right URL or localhost path in base_url, otherwise noting will work. </p>
+					<hr>
+
+					<h4>database.php</h4>
+					<hr>
+
+					<li>'database' => 'your database'</li>
+					<li>'username' => 'your database user name',</li>
+					<li>'password' => 'your database password',</li>
+<hr/>
+					<h4>Username and password</h4>
+					<hr>
+<p>The default password for all users is 123456</p>
+<p>List of all Usernames</p>
+					<li>support</li>
+					<li>technical</li>
+					<li>sales</li>
+					<hr>
+					</ul>
+					
+					</div>
+					
+
+	<a class="scroll" data-scroll href="#overview">Back To Top <i class="material-icons">arrow_upward</i></a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script>
+
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+		var num = 1000; //number of pixels before modifying styles
+		$(window).bind('scroll', function () {
+			if ($(window).scrollTop() > num) {
+				$('.sidebar-menu').addClass('fixed');
+			} else {
+				$('.sidebar-menu').removeClass('fixed');
+			}
+		});
+
+	</script>
+  </body>
+</html>
